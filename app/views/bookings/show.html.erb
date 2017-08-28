@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Device:</strong>
+  <%= link_to @booking.device.title, device_path(@booking.device) %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @booking.user.email %>
+</p>
+
+<p>
+  <strong>Checkout at:</strong>
+  <%= @booking.checkout_at %>
+</p>
+
+<p>
+  <strong>Checkin at:</strong>
+  <%= @booking.checkin_at %>
+</p>
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>

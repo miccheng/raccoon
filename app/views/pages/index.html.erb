@@ -1,2 +1,4 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<h1>Raccoon King</h1>
+<p>Welcome back, <%= current_user.email %></p>
+
+<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
